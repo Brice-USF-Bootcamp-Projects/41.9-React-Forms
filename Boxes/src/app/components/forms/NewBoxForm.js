@@ -28,42 +28,48 @@ function NewBoxForm({ createBox }) {
 
   return (
     <form onSubmit={gatherInput} className="flex flex-col space-y-4">
-      <div>
-        <label htmlFor="height">Height:</label>
+      <div className="text-blue-500">
+        <label htmlFor="height" className="block mb-1">
+          Height:
+        </label>
         <input
           onChange={handleChange}
           type="text"
           name="height"
           id="height"
           value={formData.height}
-          className="border rounded p-1"
+          className="border rounded p-2 text-blue-500"
         />
       </div>
-      <div>
-        <label htmlFor="width">Width:</label>
+      <div className="text-blue-500">
+        <label htmlFor="width" className="block mb-1">
+          Width:
+        </label>
         <input
           onChange={handleChange}
           type="text"
           name="width"
           id="width"
           value={formData.width}
-          className="border rounded p-1"
+          className="border rounded p-2 text-blue-500"
         />
       </div>
-      <div>
-        <label htmlFor="backgroundColor">Background Color:</label>
+      <div className="text-blue-500">
+        <label htmlFor="backgroundColor" className="block mb-1">
+          Background Color:
+        </label>
         <input
           onChange={handleChange}
           type="text"
           name="backgroundColor"
           id="backgroundColor"
           value={formData.backgroundColor}
-          className="border rounded p-1"
+          className="border rounded p-2 text-blue-500"
         />
       </div>
       <button className="bg-blue-500 text-white px-4 py-2 rounded">Add a new box!</button>
     </form>
   );
+  
 }
-
 export default NewBoxForm;
