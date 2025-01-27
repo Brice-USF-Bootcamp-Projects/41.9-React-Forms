@@ -1,3 +1,6 @@
+// src/app/components/forms/NewTodoForm.js
+
+'use client'
 import React, { useState } from "react";
 import { v4 as uuid } from 'uuid';
 
@@ -15,7 +18,7 @@ function NewTodoForm({ createTodo }) {
   };
 
   return (
-    <div>
+    <div className="text-blue-500 m-4">
       <form onSubmit={gatherInput}>
         <label htmlFor="task">Task:</label>
         <input
@@ -25,7 +28,7 @@ function NewTodoForm({ createTodo }) {
           onChange={handleChange}
           value={task}
         />
-        <button>Add a todo!</button>
+        <button className="bg-blue-500 text-white px-4 py-2 rounded m-4">Add a todo!</button>
       </form>
     </div>
   );

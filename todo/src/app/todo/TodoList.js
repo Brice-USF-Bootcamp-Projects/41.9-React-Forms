@@ -1,6 +1,9 @@
+// src/app/components/todo/TodoList.js
+
+'use client'
 import React, { useState } from "react";
-import Todo from "./Todo";
-import NewTodoForm from "./NewTodoForm";
+import Todo from "../components/todo/Todo";
+import NewTodoForm from "../components/forms/NewTodoForm";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
